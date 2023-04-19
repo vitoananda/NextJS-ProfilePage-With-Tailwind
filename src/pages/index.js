@@ -6,15 +6,6 @@ import {BsDownload,BsLinkedin, BsInstagram,BsGithub} from 'react-icons/bs';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 
-
-
-import { Montserrat } from 'next/font/google'
-
-const montserrat = Montserrat({
-  weight: '400',
-  subsets: ['latin'],
-})
-
 const variants = {
   hidden: {opacity:0},
   visible: {opacity:1, transition: {type:"tween",duration:1}}
