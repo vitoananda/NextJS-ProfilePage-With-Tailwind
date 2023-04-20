@@ -25,6 +25,14 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'abstract-bg' : "url('../public/website bg.jpg')"
       },
+      animation: {
+        shine: "shine 1s",
+      },
+      keyframes: {
+        shine: {
+          "100%": { left: "125%" },
+        },
+      }
     },
   },
   plugins: [],
