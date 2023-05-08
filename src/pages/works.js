@@ -7,9 +7,9 @@ import {SiTailwindcss, SiFlutter} from 'react-icons/si'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import {RiFlutterFill} from 'react-icons/ri'
 
-export default function Cards(){
+export default function Works(){
     return(
-        <div className='h-full px-10 pt-5 pb-2 mt-0 mb-0 bg-softgray' data-aos="fade-up"
+        <section className='h-full px-10 pt-5 pb-2 mt-6 mb-0 bg-white '  data-aos="fade-up"
         data-aos-duration="1000" >
             <p className='mx-5 mb-5 mt-10 font-bold text-4xl text-softblck'>Services</p>
         <div class="container pr-2 mx-auto flex flex-wrap">
@@ -59,6 +59,6 @@ export default function Cards(){
     </a>
 
    
-   </div>
+   </section>
     )
 }

@@ -6,17 +6,7 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'gray': '#4b5563',
-      'white': '#ffffff',
-      'ylw': '#F3C529',
-      'rd' : '#E13F18',
-      'bl' : '#2256DD',
-      'lbl' : '#4678E8', 
-      'softblck' : '#414a4c'
-    },
+    
 
     extend: {
       backgroundImage: {
@@ -32,7 +22,22 @@ module.exports = {
         shine: {
           "100%": { left: "125%" },
         },
-      }
+      },
+      height: {
+        '128': '28rem',
+      },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'gray': '#4b5563',
+        'white': '#ffffff',
+        'ylw': '#F3C529',
+        'rd' : '#E13F18',
+        'bl' : '#2256DD',
+        'lbl' : '#4678E8', 
+        'softblck' : '#414a4c',
+        'softgray' : '#F5F2EA'
+      },
     },
   },
   plugins: [],

@@ -12,6 +12,7 @@
     "@next/font": "^13.3.0",
     "aos": "^2.3.4",
     "autoprefixer": "10.4.14",
+    "favicons": "^7.1.2",
     "framer-motion": "^10.12.4",
     "next": "13.3.0",
     "postcss": "8.4.22",
@@ -19,7 +20,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-type-animation": "^3.0.1",
-    "react-use-downloader": "^1.2.4"
+    "react-use-downloader": "^1.2.4",
+    "tw-elements": "^1.0.0-beta2"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.1"

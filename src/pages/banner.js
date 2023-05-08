@@ -3,13 +3,16 @@ import Image from 'next/image';
 import avatar from '../public/avatar with bg.svg'
 import { TypeAnimation } from 'react-type-animation';
 import {BsDownload,BsLinkedin, BsInstagram,BsGithub} from 'react-icons/bs';
+import {FaLinkedinIn} from 'react-icons/fa'
+import {AiOutlineLinkedin,AiOutlineGithub,AiOutlineInstagram} from 'react-icons/ai'
+import {RiInstagramFill} from 'react-icons/ri'
 const variants = {
     hidden: {opacity:0},
     visible: {opacity:1, transition: {type:"tween",duration:1}}
   }
 export default function Banner(){
     return(
-        <div className='h-full max-h-[440px] mb-8 xl:mb-24 px-5'>
+        <div className='h-full max-h-[440px] mb-0 xl:mb-14 px-5'>
             <div className=''>
   <div className='flex flex-col lg:flex-row' >
     <div className='lg:ml-8 xl:ml-[150px] flex flex-col items-center lg:items-start text-center lg:text-left justify-center flex-1
@@ -50,13 +53,13 @@ export default function Banner(){
             animate={{opacity:1, transition: {duration:1.75}}} 
              className='flex items-center text-3xl'>
           <li>
-          <a target='_blank' href="https://www.linkedin.com/in/vito-rizqi-ananda/"><BsLinkedin className='mr-4 cursor-pointer'/></a>
+          <a target='_blank' href="https://www.linkedin.com/in/vito-rizqi-ananda/"><BsLinkedin className='transform mr-4 cursor-pointer transition duration-500 hover:scale-110'/></a>
             </li>
             <li>
-            <a target='_blank' href="https://www.instagram.com/mcm___archive/"><BsInstagram className='mr-4 cursor-pointer'/></a>
+            <a target='_blank' href="https://www.instagram.com/mcm___archive/"><BsInstagram className='transform mr-4 cursor-pointer transition duration-500 hover:scale-110'/></a>
             </li>
             <li>
-            <a target='_blank' href="https://github.com/vitoananda"><BsGithub className='mr-4 cursor-pointer'/></a>
+            <a target='_blank' href="https://github.com/vitoananda"><BsGithub className=' transform mr-4 cursor-pointer transition duration-500 hover:scale-110'/></a>
             </li>
           </motion.ul>   
     </div>
@@ -65,7 +68,13 @@ export default function Banner(){
     initial="hidden"
     animate="visible" 
      className='hidden flex-1 lg:flex justify-end items-end'>
-                 <Image className='' src={avatar}/>
+                 <Image
+                 className="mb-0 pb-0"
+                  alt="avatar"
+                  src="https://storage.googleapis.com/positive-wonder-386103/avatar%20vector.png"
+                  width={1000}
+                  height={500}
+        />
                </motion.div>
   </div>
         </div>
