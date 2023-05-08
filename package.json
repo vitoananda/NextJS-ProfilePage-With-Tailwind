@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 8080",
+    "lint": "next lint",
+    "gcp-build": "npm run build",
+    "deploy": "gcloud config set project positive-wonder-386103 && gcloud app deploy app.yaml --version=0-1-0" 
   },
   "dependencies": {
     "@next/font": "^13.3.0",
